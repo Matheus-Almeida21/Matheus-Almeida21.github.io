@@ -1,0 +1,117 @@
+/*HEADER*/
+#header{
+  height: 50px;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #764AF1;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+#navigation{
+  min-width: 50%;
+}
+#navigation ul{
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+#navigation a{
+  margin: 10px 0;
+  padding: 5px 5px;
+  margin-right: 10px;
+  position: relative;
+  color: #2E2E2E;
+}
+#navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  border-radius: 2px;
+  background-color: #764AF1;
+  transition: 0.4s ease;
+}
+#navigation a:hover::after{
+  width: 100%;
+}
+#navigation a.ativado::after{
+  width: 100%;
+}
+#logo{
+  font-size: 35px;
+  align-items: center;
+  margin-left: 30px;
+  color: #2E2E2E;
+}
+.menu{
+  display: none;
+  margin-right: 30px;
+}
+
+/*Animação menu hamburguer*/
+@media(max-width: 700px){
+.menu{
+  display: block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.menu .line{
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #2E2E2E;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform .5s,
+  opacity .25s;
+}
+.menu.on .line:nth-child(1){
+  transform: translateY(13px) rotate(45deg);
+}
+.menu.on .line:nth-child(2){
+  opacity: 0;
+}
+.menu.on .line:nth-child(3){
+  transform: translateY(-13px) rotate(-45deg);
+}
+/*Animação menu*/
+#header #navigation{
+  position: absolute;
+  display: none;
+}
+#header.on #navigation{
+  display: flex;
+  background-color: #F7F7F7;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: menu 1s forwards;
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform:translateY(-300px);
+  } to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#header{
+  justify-content: space-between;
+}
+#header.on ul{
+  flex-direction: column;
+  height: 70%;
+}
+}

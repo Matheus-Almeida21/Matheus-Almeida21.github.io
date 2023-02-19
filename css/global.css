@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+  scroll-behavior: smooth;
+}
+img{
+  display: block;
+  width: 300px;
+  height: 300px;;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+p{
+  font-size: 1.1rem;
+}
+.titulo{
+  font-size: 50px;
+}
+.flex{
+  display: flex;
+}
+
+/*Scroll personalizado*/
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: #545454;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+  background: #303030;
+}
+/*Revelar elemento ao scroll*/
+.reveal{
+  position: relative;
+  transform: translateY(144px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.ativo{
+  transform: translateY(0);
+  opacity: 1;
+}

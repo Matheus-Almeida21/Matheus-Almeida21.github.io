@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio dos meus projetos e serviços. Clique para saber mais" />
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./Assets/your-logo.png" type="image/x-icon" />
+  <title>Portfólio</title>
+</head>
+
+<body>
+
+  <main id="container">
+    <header id="header" class="flex">
+      <a href="#" id="logo" class="flex">&lt;/&gt;</a>
+      <nav id="navigation" class="flex on">
+        <ul class="flex">
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#skills">Conhecimentos</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contacts">Contato</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </header>
+
+    <section id="home" class="flex">
+      <div id="description" class="flex reveal">
+        <div>
+          <h1>Matheus Almeida</h1>
+          <h3>Dev Front-End e Web Designer</h3>
+          <a href="https://api.whatsapp.com/send?phone=5511964581388" target="_blank">Contato</a>
+          <a href="./Assets/Curriculo2022.pdf" download="Curriculo">Baixar CV</a>
+        </div>
+      </div>
+      <div id="banner" class="flex reveal">
+        <img src="Imagens/programador.svg" alt="ilustração de pessoa em frente ao computador">
+      </div>
+    </section>
+
+    <section id="about" class="flex">
+      <div class="flex about-item reveal">
+        <img src="Imagens/perfil.svg" alt="ilustração de perfil">
+      </div>
+      <div id="description-about" class="flex about-item reveal">
+        <div class="flex">
+          <h1 class="titulo">Sobre mim</h1>
+          <p>
+            Meu nome é Matheus Almeida Cavallari, tenho 20 anos e sou um desenvolvedor Front-End e apaixonado por Tecnologia. Atualmente desenvolvo de pequenas a medias aplicações usando <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> e <span>ReactJS</span>, sempre buscando atingir a excelência no que faço.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="flex">
+      <h1 class="titulo reveal">Serviços</h1>
+      <div class="service-container flex reveal">
+        <div class="service card">
+          <div class="front-card">
+            <img src="Imagens/p2.png">
+            <h3>UX|UI Design</h3>
+          </div>
+          <div class="back-card flex">
+            <p>Prototipagem</p>
+            <p>Design do site</p>
+          </div>
+        </div>
+        <div class="service card">
+          <div class="front-card">
+            <img src="Imagens/p1.png" alt="imagem de um computador com programas abertos">
+            <h3>Web Sites</h3>
+          </div>
+          <div class="back-card flex" alt="imagem de um computador com programas abertos">
+            <p>Landing pages</p>
+            <p>Site institucional</p>
+            <p>Blogs & sites pessoais</p>
+            <p>Loja virtual</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="flex">
+      <h1 class="titulo reveal">Conhecimentos</h1>
+      <div id="container-skills" class="reveal">
+        <div class="card-skills flex">
+          <img src="Icones/html.svg" alt="html">
+          <p style="color: orange;">HTML</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/css.svg" alt="css">
+          <p style="color: lightblue;">CSS</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/javascript.svg" alt="javascript">
+          <p style="color: yellow;">JavaScript</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/git.svg" alt="git">
+          <p style="color: orange;">GIT</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/bootstrap.svg" alt="bootstrap">
+          <p style="color: #935DE6;">BOOTSTRAP</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/figma2.svg" alt="figma">
+          <p style="color: white;">FIGMA</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/logo-react.svg" alt="reactJS">
+          <p style="color: lightskyblue;">REACT</p>
+        </div>
+        <div class="card-skills flex">
+          <img src="Icones/logo-nodejs.svg" alt="nodeJS">
+          <p style="color: #76C22A;">NODE</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="flex">
+      <h1 class="titulo reveal">Projetos</h1>
+      <div class="projects-description flex reveal">
+        <div>
+          <span>Segure e arraste para navegar sobre os projetos</span>
+          <img src="Icones/swipe1.svg" alt="icone de uma mão simulando movimento">
+        </div>
+        <img src="Icones/flecha.svg" alt="icone d euma flecha indicando direção">
+      </div>
+      <div id="container-projects" class="items reveal">
+        <div class="project item reveal">
+          <div class="img-container">
+            <img src="./Imagens/animal-blog.png" alt="imagem do projeto animal blog">
+          </div>
+          <div class="description">
+            <h3>Animal Blog</h3>
+            <a href="https://matheus-almeida21.github.io/Animal-blog/" target="_blank">Vizualizar</a>
+            <a href="https://github.com/Matheus-Almeida21/Animal-blog" target="_blank">Repositorio</a>
+          </div>
+        </div>
+
+        <div class="project item reveal">
+          <div class="img-container" alt="imagem do projeto Blog WildBeast">
+            <img src="./Imagens/blog-logo.png">
+          </div>
+          <div class="description">
+            <h3>Blog WildBeast</h3>
+            <a href="https://matheus-almeida21.github.io/Projeto-Wildbeast/" target="_blank">Vizualizar</a>
+            <a href="https://github.com/Matheus-Almeida21/Projeto-Wildbeast" target="_blank">Repositorio</a>
+          </div>
+        </div>
+
+        <div class="project item reveal">
+          <div class="img-container" alt="imagem do projeto countdown">
+            <img src="./Imagens/countdown.png">
+          </div>
+          <div class="description">
+            <h3>Contagem regressiva</h3>
+            <a href="https://matheus-almeida21.github.io/Countdown-App/" target="_blank">Vizualizar</a>
+            <a href="https://github.com/Matheus-Almeida21/Countdown-App" target="_blank">Repositorio</a>
+          </div>
+        </div>
+
+        <div class="project item reveal">
+          <div class="img-container" alt="imagem do projeto Relogio digital">
+            <img src="./Imagens/relogio.png">
+          </div>
+          <div class="description">
+            <h3>Relogio digital</h3>
+            <a href="https://matheus-almeida21.github.io/clock-App/" target="_blank">Vizualizar</a>
+            <a href="https://github.com/Matheus-Almeida21/clock-App" target="_blank">Repositorio</a>
+          </div>
+        </div>
+
+        <div class="project item reveal">
+          <div class="img-container" alt="imagem do projeto buscador de CEP">
+            <img src="./Imagens/buscar-cep.png">
+          </div>
+          <div class="description">
+            <h3>Buscador de CEP</h3>
+            <a href="https://matheus-almeida21.github.io/searchAdress-App/" target="_blank">Vizualizar</a>
+            <a href="https://github.com/Matheus-Almeida21/searchAdress-App" target="_blank">Repositorio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="flex">
+      <div id="contact-description" class="flex reveal">
+        <div>
+          <h1 class="titulo">Contato</h1>
+          <p>
+            Estou dísponivel para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.
+          </p>
+          <ul id="social-medias" class="flex">
+            <li class="contact">
+              <a href="https://www.linkedin.com/in/matheus-almeida-2601541b9/" target="_blank"><img src="Icones/linkedin.svg" alt="linkedin"></a>
+            </li>
+            <li class="contact">
+              <a href="https://api.whatsapp.com/send?phone=5511964581388" target="_blank"><img src="Icones/whatsapp.svg" alt="whatsapp"></a>
+            </li>
+            <li class="contact">
+              <a href="https://github.com/Matheus-Almeida21" target="_blank"><img src="Icones/github-brands.svg" alt="github"></a>
+            </li>
+            <li class="contact">
+              <a href="mailto:matheus.cavallari7@gmail.com" target="_blank"><img src="Icones/email.svg" alt="email"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contact-form" class="flex reveal">
+        <form action="https://formsubmit.co/matheus.cavallari7@gmail.com" method="POST" id="contato">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="name" placeholder="seu nome" autocomplete="off" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu email" autocomplete="off" required>
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="6" placeholder="sua mensagem" name="message" required></textarea>
+          </div>
+          <button type="submit" id="form-button">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer" class="flex">
+      <div>
+        <p>©2022 - Matheus Almeida. Todos os direitos reservados.</p>
+        <a href="#"><img src="./Icones/arrow-up.svg" alt="icone de voltar ao topo"></a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
